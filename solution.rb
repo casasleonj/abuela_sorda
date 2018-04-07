@@ -1,5 +1,9 @@
 require 'sinatra'
 
+not_found do
+  halt 404, '<h1>Tienes mal algua ruta, revisalo pues!</h1>'
+end
+
 get '/' do 
 	erb :index
 end
